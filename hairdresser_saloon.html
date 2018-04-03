@@ -8,11 +8,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Hairdresser saloon</title>
+    <style>
+        #image1 {
+            background: url("http://www.clipartquery.com/images/54/vector-girls-with-long-hair-flowing-free-vector-4vector-nyAo8q.jpg");
+            min-height: 300px;
+        }
+        #search {
+            width: 25%;
+        }
+        #arrow-left {
+            max-width: 150px;
+        }
+        #arrow-right {
+            max-width: 150px;
+        }
+    </style>
   </head>
   <body>
+      <header>
+          <div class="container-fluid">
+              <div class="form-group row d-flex justify-content-right" id="search">
+              <label for="example-search-input" class="col-2 col-form-label">Search</label>
+              <div class="col-10">
+                <input class="form-control" type="search" value="Pictures of cats" id="example-search-input">
+              </div>
+          </div>
+      </header>
+      <!-- Row 1 -->
       <div class="container-fluid">
-          ...
+          <div class="row">
+              <div class="col-sm d-flex align-items-center justify-content-right">
+                  <img id="arrow-left" src="https://image.flaticon.com/icons/svg/25/25184.svg" alt="Previous image" />
+              </div>
+              <div class="col-6 d-flex align-items-center justify-content-center" id="image1">
+              </div>
+              <div class="col-sm d-flex align-items-center justify-content-left">
+                  <img id="arrow-right" src="http://www.pngmart.com/files/3/Right-Arrow-PNG-HD.png" alt="Next image" />
+              </div>
+          </div>
+
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
