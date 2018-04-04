@@ -29,12 +29,19 @@
         #arrow-right {
             max-width: 150px;
         }
-        #example-search-input {
-
+        header #search {
+            color: #FFF;
         }
         /* Remove margins between container rows */
         .marginRow{
             margin-bottom:0px !important;
+        }
+
+        #arrow-left {
+            max-width: 150px;
+        }
+        #left-column-1 {
+            width: 100%;
         }
     </style>
   </head>
@@ -44,7 +51,7 @@
               <div class="form-group row ml-auto marginRow" id="search">
               <label for="example-search-input" class="col-2 col-form-label">Search</label>
               <div class="col-10">
-                <input class="form-control pull-right" type="search" value="Pictures of cats" id="example-search-input">
+                <input class="form-control pull-right" type="search" id="search-input">
               </div>
           </div>
       </header>
@@ -52,15 +59,15 @@
       <div class="container-fluid" id="row-1">
           <div class="row">
               <!-- Arrow left -->
-              <div class="col-sm d-flex align-items-center">
-                  <img class="ml-auto" id="arrow-left" src="http://iconshow.me/media/images/ui/ios7-icons/png/256/arrow-left-b.png" alt="Previous image" />
+              <div class="col-sm d-flex align-items-center ml-auto" id="left-column-1">
+                  <a class="ml-auto" href="#"><img id="arrow-left" src="img/Buttons/arrow-left-b.png" alt="Previous image" onmouseover="this.src='img/Buttons/arrow-left-p.png'" onmouseout="this.src='img/Buttons/arrow-left-b.png'" /></a>
               </div>
               <!-- Image -->
               <div class="col-6 d-flex align-items-center justify-content-center" id="image1">
               </div>
               <!-- Arrow right -->
               <div class="col-sm d-flex align-items-center justify-content-left">
-                  <img id="arrow-right" src="http://iconshow.me/media/images/ui/ios7-icons/png/256/arrow-right-b.png" alt="Next image" />
+                  <a class="mr-auto" href="#"><img id="arrow-right" src="img/Buttons/arrow-right-b.png" alt="Next image" onmouseover="this.src='img/Buttons/arrow-right-p.png'" onmouseout="this.src='img/Buttons/arrow-right-b.png'" /></a>
               </div>
           </div>
 
