@@ -10,10 +10,6 @@
 
     <title>Hairdresser saloon</title>
     <style>
-        /* Smartphones (portrait and landscape) ----------- */
-        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-        }
         /* Remove margins between container rows */
         .marginRow{
             margin-bottom:0px !important;
@@ -21,17 +17,16 @@
         header {
             background-image: url(img/header-bg.png);
         }
-        header #search {
-            color: #FFF;
+        #search-input {
+            margin: 0 0 0 10px;
         }
         #search {
-            max-width: 25%;
+            width: 250px;
+            color: #FFF;
+            margin-right: 5px;
         }
         body {
             background-image: url(img/row1-bg.png);
-        }
-        #row-1 {
-            height: 300px;
         }
         #image1 {
             background-image: url("img/logo.jpg");
@@ -43,41 +38,73 @@
             background-position: center center;
         }
         .arrows {
-            width: 150px;
+            width: 70px;
             max-width: 100%;
             height: auto;
+            min-width: 30px;
         }
-        #left-column-1 {
-            min-width: 10%;
+        #level2 {
+            margin: 100px 0 0 0;
         }
-
+        /* ROW 2 */
+        #level2 .col-sm  {
+          background-color: #FFF;
+          min-height: 300px;
+          max-width: 250px;
+          min-width: 250px;
+        }
+        #level2 p {
+          font-family: cursive;
+          font-size: 20px;
+          color: #FFF;
+          background-color: black;
+          margin: 0 -15px 0 -15px;
+          padding: 0 10px 5px 10px;
+        }
     </style>
   </head>
   <body>
       <header>
           <div class="container-fluid">
               <div class="form-group row ml-auto marginRow" id="search">
-              <label for="example-search-input" class="col-2 col-form-label">Search</label>
+              <label for="search-input" class="col-2 col-form-label">Search</label>
               <div class="col-10">
-                <input class="form-control pull-right" type="search" id="search-input">
+                <input class="form-control" type="search" id="search-input">
               </div>
           </div>
       </header>
       <!-- Row 1 -->
       <div class="container-fluid">
           <div class="row" id="row-1">
-              <!-- Arrow left -->
-              <div class="col-sm d-flex align-items-center ml-auto" id="left-column-1">
-                  <a class="ml-auto" href="#"><img class="arrows" src="img/Buttons/arrow-left-b.png" alt="Previous image" onmouseover="this.src='img/Buttons/arrow-left-p.png'" onmouseout="this.src='img/Buttons/arrow-left-b.png'" /></a>
+            <!-- Arrow left -->
+            <div class="col-sm d-flex align-items-center ml-auto" id="left-column-1">
+              <a class="ml-auto" href="#"><img class="arrows img-responsive" src="img/Buttons/arrow-left-b.png" alt="Previous image" onmouseover="this.src='img/Buttons/arrow-left-p.png'" onmouseout="this.src='img/Buttons/arrow-left-b.png'" /></a>
+            </div>
+            <!-- Image -->
+            <div class="col-6" id="image1">
+            </div>
+            <!-- Arrow right -->
+            <div class="col-sm d-flex align-items-center justify-content-left">
+              <a class="mr-auto" href="#"><img class="arrows" src="img/Buttons/arrow-right-b.png" alt="Next image" onmouseover="this.src='img/Buttons/arrow-right-p.png'" onmouseout="this.src='img/Buttons/arrow-right-b.png'" /></a>
+            </div>
+            <br />
+      </div>
+
+      <!-- Row 2 -->
+      <div class="container-fluid" id="level2">
+            <div class="row" id="row-2">
+              <div class="col-sm m-5 ml-auto mr-auto">
+                <p>Styling</p>
               </div>
-              <!-- Image -->
-              <div class="col-6" id="image1">
+
+              <div class="col-sm m-5 ml-auto mr-auto">
+                <p>Coloring</p>
               </div>
-              <!-- Arrow right -->
-              <div class="col-sm d-flex align-items-center justify-content-left">
-                  <a class="mr-auto" href="#"><img class="arrows" src="img/Buttons/arrow-right-b.png" alt="Next image" onmouseover="this.src='img/Buttons/arrow-right-p.png'" onmouseout="this.src='img/Buttons/arrow-right-b.png'" /></a>
+
+              <div class="col-sm m-5 ml-auto mr-auto ">
+                <p>Haircuts</p>
               </div>
-          </div>
+      </div>
 
       </div>
     <!-- Optional JavaScript -->
