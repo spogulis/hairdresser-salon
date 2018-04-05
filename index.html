@@ -27,9 +27,6 @@
         header label {
           margin-left: auto;
         }
-        #level1 {
-          max-height: 100%;
-        }
         body {
             background-image: url(img/row1-bg.png);
         }
@@ -113,6 +110,53 @@
           box-shadow: 0 0 10px rgb(54, 54, 54);
           background: #323539;
         }
+        #question-list {
+          color: #FFF;
+        }
+        #gift-q {
+          background: #323539;
+          color: #FFF;
+          /* font-size: 24px; */
+          margin-bottom: 5px;
+          box-shadow: 0 0 10px rgb(54, 54, 54);
+        }
+        #gift-a {
+          background: #323539;
+          box-shadow: 0 0 10px rgb(54, 54, 54);
+        }
+        #pet-q {
+          background: #323539;
+          color: #FFF;
+          font-size: 24px;
+          margin-bottom: 5px;
+          box-shadow: 0 0 10px rgb(54, 54, 54);
+        }
+        #pet-a {
+          background: #323539;
+          box-shadow: 0 0 10px rgb(54, 54, 54);
+        }
+        #accessibility-q {
+          background: #323539;
+          color: #FFF;
+          font-size: 24px;
+          margin-bottom: 5px;
+          box-shadow: 0 0 10px rgb(54, 54, 54);
+        }
+        #accessibility-a {
+          background: #323539;
+          box-shadow: 0 0 10px rgb(54, 54, 54);
+        }
+        #logo-bottom-img {
+          box-shadow: 0 0 10px rgb(54, 54, 54);
+        }
+        @media only screen and (max-width: 599px) {
+        .question-button {
+            font-size: 16px !important;
+            white-space:  normal !important;
+        }}
+        .question-button {
+          font-size: 24px;
+        }
     </style>
   </head>
   <body>
@@ -149,7 +193,7 @@
       </div>
       <!-- Row 2 -->
       <div class="container-fluid" id="level2">
-            <div class="row no-gutters justify-content-center">
+            <div class="row no-gutters justify-content-center mt-5">
               <div class="col-sm m-md-5">
                 <p>Styling <img class="float-right level2-icons" src="img/Level2/styling-icon.png" alt="Styling logo" /></p>
                 <img class="level2-backgrounds" src="img/Level2/styling.jpg" alt="Image of hair styling" />
@@ -170,7 +214,7 @@
       <!-- Row 3 (form group) -->
       <div class="container-fluid" id="level3">
             <div class="row justify-content-center">
-              <div class="col-md-5 mr-md-5" id="contact-form">
+              <div class="col-md-5 mr-md-5 mt-5" id="contact-form">
                 <form>
                   <div class="form-group">
                     <label for="formGroupExampleInput">Contact us</label>
@@ -199,8 +243,8 @@
                   <button type="button" class="btn btn-light ml-auto mr-auto">Submit</button>
                 </form>
               </div>
-              <div class="cold-md-3 ml-md-5" id="work-schedule">
-                <table  class="table table-striped table-hover table-dark table-sm table-responsive">
+              <div class="cold-md-3 ml-md-5 mt-5" id="work-schedule">
+                <table  class="table table-striped table-hover table-dark table-responsive">
                   <thead>
                     <tr>
                       <th>Day of the week</th>
@@ -236,6 +280,56 @@
               </div>
             </div>
       </div>
+      </div>
+      <!-- ROW 4 -->
+      <div id="question-list" role="tablist" aria-multiselectable="yes">
+        <!-- Question1 -->
+        <div id="question-row1" role="tab" class="container-fluid" aria-multiselectable="true">
+          <div class="row">
+            <div class="col-md-8 mt-5 p-0 mx-auto" role="tab">
+              <button id="gift-q" class="btn btn-block question-button" href="#gift-a" data-toggle="collapse" aria-controls="gift-a" aria-expanded="false" >Do you have gift certificates?</button>
+            </div>
+            <!-- ANSWER -->
+            <div id="gift-a" class="col-8 mx-auto mb-3 collapse" role="tabpanel" aria-labelledby="question-row1">
+                Gift certificates are available for purchase in the salon or over the phone.
+                If you purchase a gift certificate over the phone, we can either mail it to your
+                lucky recipient or keep it in our files. Elixir salon gift certificates are not
+                redeemable for cash and are non-refundable.
+            </div>
+          </div>
+        </div>
+        <!-- Question2 -->
+        <div id="question-row2" class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 p-0 mx-auto" role="tab">
+              <button id="pet-q" class="btn btn-block question-button" href="#pet-a" data-toggle="collapse" aria-controls="pet-a" aria-expanded="false">Can I bring my pet along?</button>
+            </div>
+            <!-- ANSWER -->
+            <div id="pet-a" class="col-8 mx-auto mb-3 collapse" role="tabpanel" aria-labelledby="question-row2">
+                Yes, we have a special area for dogs and maybe even cats. Other animals might have to wait outside. :(
+            </div>
+          </div>
+        </div>
+        <!-- Question3 -->
+        <div id="question-row3" class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 p-0 mx-auto" role="tab">
+              <button id="accessibility-q" class="btn btn-block question-button" href="#accessibility-a" data-toggle="collapse" aria-controls="accessibility-a" aria-expanded="false">Do you have access for people with disabilities?</button>
+            </div>
+            <!-- ANSWER -->
+            <div id="accessibility-a" class="col-8 mx-auto collapse" role="tabpanel" aria-labelledby="question-row3">
+                Yes, our facilities are reachable by wheelchairs and our employees will help in case further assistance is required.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 5 -->
+      <div id="logo-bottom" class="container-fluid">
+        <div class="row">
+          <div class="col-12 mx-auto mt-5 text-center">
+            <img id="logo-bottom-img" src="img/bottom-logo.png" alt="Logo" />
+          </div>
+        </div>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
