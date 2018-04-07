@@ -7,156 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hairdresser saloon</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Hairdresser salon</title>
     <style>
-        body {
-          width: 100%;
-          color: #FFF;
-        }
-        /* Remove margins between container rows */
-        .marginRowBottom {
-            margin-bottom:0px !important;
-        }
-        header {
-            /* #813772 Black LinenV2 Bumpmap */
-            background-image: url(img/header-bg.png);
-            margin-bottom: 20px;
-            box-shadow: 0 0 5px black;
-        }
-        header label {
-          margin-left: auto;
-        }
-        body {
-            background-image: url(img/row1-bg.png);
-        }
-        #image1 {
-            max-width: 100%;
-            min-width: 150px;
-            box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        .arrows {
-            max-width: 100%;
-            min-width: 30px;
-        }
-        #s-arrow-left {
-          margin-right: 20px;
-        }
-        #s-arrow-right {
-          margin-left: 20px;
-        }
-        #image-container {
-          display: flex;
-          flex-wrap: nowrap;
-        }
-        #image-container a img {
-          width: 5vw;
-        }
-        #image-container span {
-          display: flex;
-          align-items: center; /* align vertical */
-        }
 
-        /* ROW 2 */
-        #level2 {
-          max-height: 100%;
-          min-width: 252.5px;
-        }
-        #level2 .col-sm  {
-          background-color: #323539;
-          min-height: 300px;
-          max-width: 250px;
-          min-width: 252.5px;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-          border-top: 1px solid lightgrey;
-        }
-        #level2 p {
-          font-size: 20px;
-          color: #FFF;
-          background-color: #323539;
-          padding: 10px 15px 0 10px;
-        }
-        #styling-icon {
-          width: 50px;
-          margin-top: -5px;
-        }
-        .level2-icons {
-          width: 50px;
-          margin-top: -5px;
-        }
-        .level2-backgrounds {
-          background-size: cover;
-          max-width: 100%;
-          border-top: 1px solid lightgrey;
-        }
-
-        /* ROW 3 */
-        #contact-form {
-          background: #323539;
-          max-width: 40%;
-          min-width: 252.5px;
-          color: #FFF;
-          font-size: 24px;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        #level3 button {
-          display: flex;
-        }
-        #checkbox-label {
-          font-size: 15px;
-          font-weight: bold;
-        }
-        #work-schedule {
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-          background: #323539;
-        }
-        #question-list {
-          color: #FFF;
-        }
-        #gift-q {
-          background: #323539;
-          color: #FFF;
-          /* font-size: 24px; */
-          margin-bottom: 5px;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        #gift-a {
-          background: #323539;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        #pet-q {
-          background: #323539;
-          color: #FFF;
-          font-size: 24px;
-          margin-bottom: 5px;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        #pet-a {
-          background: #323539;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        #accessibility-q {
-          background: #323539;
-          color: #FFF;
-          font-size: 24px;
-          margin-bottom: 5px;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        #accessibility-a {
-          background: #323539;
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        #logo-bottom-img {
-          box-shadow: 0 0 10px rgb(54, 54, 54);
-        }
-        @media only screen and (max-width: 599px) {
-        .question-button {
-            font-size: 16px !important;
-            white-space:  normal !important;
-        }}
-        .question-button {
-          font-size: 24px;
-        }
     </style>
   </head>
   <body>
@@ -228,7 +82,7 @@
                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Preffered date">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Other relevant information (haircut styling wishes, etc.)">
+                    <input type="text" class="form-control question-button" id="formGroupExampleInput2" placeholder="Other relevant information (haircut styling wishes, etc.)">
                   </div>
                   <!-- Checkbox -->
                   <label id="checkbox-label" for="form-control">Check box below if you'd like to receive news and updates from us.</label>
@@ -284,9 +138,9 @@
       <!-- ROW 4 -->
       <div id="question-list" role="tablist" aria-multiselectable="yes">
         <!-- Question1 -->
-        <div id="question-row1" role="tab" class="container-fluid" aria-multiselectable="true">
+        <div id="question-row1" role="tab" class="container-fluid p-0" aria-multiselectable="true">
           <div class="row">
-            <div class="col-md-8 mt-5 p-0 mx-auto" role="tab">
+            <div class="col-8 mt-5 p-0 mx-auto" role="tab">
               <button id="gift-q" class="btn btn-block question-button" href="#gift-a" data-toggle="collapse" aria-controls="gift-a" aria-expanded="false" >Do you have gift certificates?</button>
             </div>
             <!-- ANSWER -->
@@ -299,9 +153,9 @@
           </div>
         </div>
         <!-- Question2 -->
-        <div id="question-row2" class="container-fluid">
+        <div id="question-row2" class="container-fluid p-0">
           <div class="row">
-            <div class="col-md-8 p-0 mx-auto" role="tab">
+            <div class="col-8 p-0 mx-auto" role="tab">
               <button id="pet-q" class="btn btn-block question-button" href="#pet-a" data-toggle="collapse" aria-controls="pet-a" aria-expanded="false">Can I bring my pet along?</button>
             </div>
             <!-- ANSWER -->
@@ -311,9 +165,9 @@
           </div>
         </div>
         <!-- Question3 -->
-        <div id="question-row3" class="container-fluid">
+        <div id="question-row3" class="container-fluid p-0">
           <div class="row">
-            <div class="col-md-8 p-0 mx-auto" role="tab">
+            <div class="col-8 p-0 mx-auto" role="tab">
               <button id="accessibility-q" class="btn btn-block question-button" href="#accessibility-a" data-toggle="collapse" aria-controls="accessibility-a" aria-expanded="false">Do you have access for people with disabilities?</button>
             </div>
             <!-- ANSWER -->
