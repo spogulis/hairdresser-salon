@@ -103,37 +103,38 @@ header label {
   background: #323539;
   color: #FFF;
   font-size: 24px;
-  margin-bottom: 5px;
   box-shadow: 0 0 10px rgb(54, 54, 54);
 }
 #gift-a {
-  background: #323539;
+  background: #212529;
   box-shadow: 0 0 10px rgb(54, 54, 54);
 }
 #pet-q {
   background: #323539;
   color: #FFF;
   font-size: 24px;
-  margin-bottom: 5px;
   box-shadow: 0 0 10px rgb(54, 54, 54);
 }
 #pet-a {
-  background: #323539;
+  background: #212529;
   box-shadow: 0 0 10px rgb(54, 54, 54);
 }
 #accessibility-q {
   background: #323539;
   color: #FFF;
   font-size: 24px;
-  margin-bottom: 5px;
   box-shadow: 0 0 10px rgb(54, 54, 54);
 }
 #accessibility-a {
-  background: #323539;
+  background: #212529;
   box-shadow: 0 0 10px rgb(54, 54, 54);
 }
 #logo-bottom-img {
   box-shadow: 0 0 10px rgb(54, 54, 54);
+}
+.question-button {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 @media only screen and (max-width: 768px) {
 .question-button {
